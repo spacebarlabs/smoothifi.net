@@ -152,6 +152,34 @@
     .footer-link:hover, .footer-link:focus {
       color: #ffb86f;
     }
+    .cta-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 24px 0 10px 0;
+    }
+    .cta-ebay-btn {
+      display: inline-block;
+      background: linear-gradient(90deg, #ff6fb5 0%, #ffb86f 100%);
+      color: #fff;
+      font-size: 1.28rem;
+      font-weight: 700;
+      padding: 18px 38px;
+      border: none;
+      border-radius: 32px;
+      box-shadow: 0 4px 18px rgba(255,111,181,0.10), 0 2px 8px rgba(0,0,0,0.07);
+      text-decoration: none;
+      transition: transform 0.13s, box-shadow 0.13s, background 0.18s;
+      letter-spacing: 0.01em;
+      outline: none;
+    }
+    .cta-ebay-btn:hover, .cta-ebay-btn:focus {
+      background: linear-gradient(90deg, #ffb86f 0%, #ff6fb5 100%);
+      color: #fff;
+      transform: translateY(-2px) scale(1.035);
+      box-shadow: 0 8px 28px rgba(255,183,111,0.15), 0 2px 8px rgba(0,0,0,0.10);
+      text-decoration: none;
+    }
     @media (max-width: 600px) {
       .placeholders-grid {
         grid-template-columns: 1fr;
@@ -170,7 +198,12 @@
   <img src="image.png" alt="Smoothifi Logo" class="logo" />
   <div class="site-title">SmoothiFi.net</div>
   <div class="tagline">SmoothiFi connecting to your WiFi</div>
-  <div class="placeholders-grid">
+  <div class="cta-container">
+    <a href="https://www.ebay.com/itm/405803119628" target="_blank" rel="noopener" class="cta-ebay-btn">
+      See our products on eBay
+    </a>
+  </div>
+  <div style="display: none;" class="placeholders-grid">
     <a href="#" class="placeholder-link">
       <div class="placeholder square">
         <span class="placeholder-label">Individuals<br>3x3</span>
